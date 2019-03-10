@@ -7,6 +7,6 @@ public interface IDao {
 	
 	void save(Map<?, ?> mapEntity);
     List<?> findAll();
-    List<?> findKeyValue(Map<String, Integer> keyValue);
-    
+    List<?> findKeyValue(Map<?, ?> keyValue);
+
 }

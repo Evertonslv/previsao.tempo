@@ -33,8 +33,8 @@ public class CityDao extends EntityDao {
 
         return citys;
     }
-
-    public List<City> find(Map<String,Integer> mapKeyValue) {
+	
+	public List<City> find(Map<?, ?> mapKeyValue) {
         List<DBObject> dbObject = findKeyValue(mapKeyValue);
 
         List<City> citys = new ArrayList<City>();

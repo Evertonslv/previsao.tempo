@@ -42,8 +42,8 @@ public class EntityDao implements IDao {
 
         return list;
     }
-
-    public List<DBObject> findKeyValue(Map<String,Integer> keyValue) {
+    
+    public List<DBObject> findKeyValue(Map<?,?> keyValue) {
         List<DBObject> list = new ArrayList<DBObject>();
 
         DBCursor cursor = dbCollection.find(new BasicDBObject(keyValue));
@@ -54,4 +54,5 @@ public class EntityDao implements IDao {
 
         return list;
     }
+
 }

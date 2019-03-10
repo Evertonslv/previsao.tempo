@@ -22,7 +22,7 @@
 		</layout>
 	</appender>
 
-	<logger name="previsao">
+	<logger name="previsao.tempo">
 		<level value="debug" />
 	</logger>
 
