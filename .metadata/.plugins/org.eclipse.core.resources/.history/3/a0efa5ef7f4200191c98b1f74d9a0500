@@ -1,0 +1,52 @@
+package previsao.tempo.model.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import com.mongodb.DBObject;
+
+import previsao.tempo.model.city;
+import previsao.tempo.model.cityConverter;
+
+
+public class CidadeDao extends EntityDao {
+
+	public CidadeDao() {
+		super(city.class);
+	}
+
+	public void save(city cidade) {
+        Map<?, ?> mapCidade = new cityConverter().converterToMap(cidade);
+        save(mapCidade);
+    }
+	
+	public List<city> find() {
+        List<DBObject> dbObject = findAll();
+
+        List<city> cidades = new ArrayList<city>();
+
+        for (DBObject dbo : dbObject) {
+        	city cidade = new cityConverter().converterToCidade(dbo);
+
+        	cidades.add(cidade);
+        }
+
+        return cidades;
+    }
+
+    public List<city> find(Map<String,Integer> mapKeyValue) {
+        List<DBObject> dbObject = findKeyValue(mapKeyValue);
+
+        List<city> cidades = new ArrayList<city>();
+
+        for (DBObject dbo : dbObject) {
+            city cidade = new cityConverter().converterToCidade(dbo);
+
+            cidades.add(cidade);
+        }
+
+        return cidades;
+    }
+	
+}

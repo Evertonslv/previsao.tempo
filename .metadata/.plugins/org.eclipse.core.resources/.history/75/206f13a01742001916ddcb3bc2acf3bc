@@ -1,0 +1,31 @@
+package model;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import model.dao.CidadeDao;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		//		Cidade cid = new Cidade(3, "gaspar");
+		//		new CidadeDao().save(cid);
+
+		//		List<Cidade> cidades = new CidadeDao().find();
+		//		
+		//        for (Cidade cidade : cidades) {
+		//            System.out.println(cidade.getCodigo());
+		//        }
+
+				Map<String, Integer> map = new HashMap<String, Integer>();
+				map.put("codigo", 1);
+				List<Cidade> cidades = new CidadeDao().find(map);
+		
+				for (Cidade cidade : cidades) {
+					System.out.println(cidade.getNome());
+				}
+
+	}
+
+}

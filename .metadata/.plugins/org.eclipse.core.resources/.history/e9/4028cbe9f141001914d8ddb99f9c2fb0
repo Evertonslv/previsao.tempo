@@ -1,0 +1,5 @@
+package previsao.tempo.server;
+
+public class CidadeServlet {
+
+}

@@ -1,0 +1,26 @@
+package previsao.tempo.model;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.mongodb.DBObject;
+
+public class CityConverter {
+
+	public Map converterToMap(City city) {
+        Map mapCity = new HashMap();
+        mapCity.put("codigo", city.getCode());
+        mapCity.put("nome", city.getName());        
+
+        return mapCity;
+    }
+
+    public City converterToCity(DBObject dbo) {
+        City cidade = new City();
+        cidade.setCode(Integer.parseInt(dbo.get("code").toString()));
+        cidade.setName(dbo.get("name").toString());
+
+        return cidade;
+    }
+	
+}

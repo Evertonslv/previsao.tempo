@@ -1,0 +1,33 @@
+package previsao.tempo.model;
+
+public class city {
+
+	private String name;
+    private int code;
+
+    public city() {
+        super();
+    }
+
+    public city(int codeCity, String nameCity) {
+        this.name = nameCity;
+        this.code = codeCity;
+    }
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String nome) {
+		this.name = nome;
+	}
+
+	public int getCodigo() {
+		return code;
+	}
+
+	public void setCodigo(int codigo) {
+		this.code = codigo;
+	}
+	
+}

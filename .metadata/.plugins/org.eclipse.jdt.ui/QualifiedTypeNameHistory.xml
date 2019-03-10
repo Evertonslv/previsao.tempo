@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="previsao.tempo.service.CidadeService"/>
+<fullyQualifiedTypeName name="previsao.tempo.model.connection.Connection"/>
+<fullyQualifiedTypeName name="previsao.tempo.model.CidadeConverter"/>
+<fullyQualifiedTypeName name="previsao.tempo.model.Cidade"/>
+<fullyQualifiedTypeName name="previsao.tempo.model.dao.CidadeDao"/>
+</qualifiedTypeNameHistroy>
