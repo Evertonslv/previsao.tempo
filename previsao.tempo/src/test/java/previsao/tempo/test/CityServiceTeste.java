@@ -1,6 +1,8 @@
 package previsao.tempo.test;
 import java.util.List;
 
+import javax.servlet.annotation.WebServlet;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,6 +10,7 @@ import previsao.tempo.model.City;
 import previsao.tempo.model.CityConverter;
 import previsao.tempo.model.dao.CityDao;
 
+@WebServlet(urlPatterns = {"/city"})
 public class CityServiceTeste {
 
 	@Test
@@ -34,7 +37,7 @@ public class CityServiceTeste {
 		
 	@Test
 	public void testeSaveCity() {
-		City city = new City(3469968, "Blumenau");		
+		City city = new City(3469968, "santos");		
 		CityDao cityDao = new CityDao();	
 		
 		cityDao.save(city);
