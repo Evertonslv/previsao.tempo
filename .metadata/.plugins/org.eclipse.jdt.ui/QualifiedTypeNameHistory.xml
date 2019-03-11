@@ -2,8 +2,20 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.logging.Logger"/>
 <fullyQualifiedTypeName name="previsao.tempo.service.CidadeService"/>
-<fullyQualifiedTypeName name="previsao.tempo.model.connection.Connection"/>
 <fullyQualifiedTypeName name="previsao.tempo.model.CidadeConverter"/>
 <fullyQualifiedTypeName name="previsao.tempo.model.Cidade"/>
 <fullyQualifiedTypeName name="previsao.tempo.model.dao.CidadeDao"/>
+<fullyQualifiedTypeName name="previsao.tempo.service.OpenWeatherMap"/>
+<fullyQualifiedTypeName name="java.net.URLConnection"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="javax.ws.rs.client.ClientBuilder"/>
+<fullyQualifiedTypeName name="java.awt.PageAttributes.MediaType"/>
+<fullyQualifiedTypeName name="com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="com.google.gson.reflect.TypeToken"/>
+<fullyQualifiedTypeName name="java.lang.ProcessBuilder.Redirect.Type"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="javax.ws.rs.client.Client"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="previsao.tempo.model.connection.Connection"/>
+<fullyQualifiedTypeName name="javax.ejb.NoMoreTimeoutsException"/>
 </qualifiedTypeNameHistroy>
